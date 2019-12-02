@@ -1,0 +1,42 @@
+body {
+  background: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family:'Roboto Mono', serif;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.name {
+  margin: 0;
+  width: 12%;
+  float: left;
+  font-size: 5vh;
+}
+
+.proffesion {
+  margin: 0;
+  width: 12%;
+  float: left;
+  font-size: 3vh;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+.first {
+  margin: 2%;
+  border: 2px solid white;
+  padding: 1%;
+}
+
+a:visited {
+  color: white;
+}
