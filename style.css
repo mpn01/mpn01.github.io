@@ -11,17 +11,20 @@ body {
   margin: 0;
   padding: 0;
 }
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
 .name {
   margin: 0;
-  width: 12%;
-  float: left;
   font-size: 5vh;
 }
 
 .proffesion {
   margin: 0;
-  width: 12%;
-  float: left;
   font-size: 3vh;
 }
 
