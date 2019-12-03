@@ -44,6 +44,23 @@ main {
   font-size: 5vh;
 }
 
+.span1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.containter {
+  background: white;
+  width: 50%;
+  height: 100%;
+  margin-right: 2%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .proffesion{
   margin: 0;
   font-size: 3vh;
