@@ -2,6 +2,8 @@
   scroll-behavior: smooth;
 }
 
+/* Main page */
+
 
 body {
   background: black;
@@ -9,18 +11,6 @@ body {
   font-family:'Roboto Mono', serif;
   margin: 0;
   padding: 0;
-}
-
-#proffesion {
-  background: white;
-  width: 53%;
-  height: 100%;
-  margin-right: 2%;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
 }
 
 
@@ -46,31 +36,25 @@ header {
   top: 0;
 }
 
-.email {
-  background: white;
-  color: black;
-  font-family: 'Roboto Mono', serif;
+a {
+  color: white;
+  text-decoration: none;
+  font-size: 2vh;
+}
+
+a:visited {
+  color: white;
 }
 
 
-main {
+#topsite_center {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
 }
 
-.name {
-  margin: 0;
-  font-size: 5vh;
-}
 
-.span1 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.containter {
+#proffesion {
   background: white;
   width: 53%;
   height: 100%;
@@ -81,7 +65,101 @@ main {
   align-items: center;
 }
 
-.proffesion{
+#aboutcontact {
+  flex-direction: row;
+}
+
+#aboutcontact-left {
+  width: 50%;
+  height: 100%;
+}
+
+#aboutcontact-left img {
+  position: absolute;
+  z-index: -1;
+  width: 10%;
+  margin: 1%;
+}
+
+#aboutcontact-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+/* Contact form */
+
+form {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+form button:first-child {
+  margin-right: auto;
+}
+
+
+.form-text {
+  background: black;
+  color: white;
+  padding: 1%;
+  border: 2px solid white;
+  width: 40%;
+  height: 50%;
+  font-family: 'Roboto Mono', serif;
+  resize: none;
+}
+
+.form-text::placeholder {
+  font-family: 'Roboto Mono', serif;
+}
+
+
+.form-email {
+  background: black;
+  color: white;
+  border: 2px solid white;
+  font-size: 100%;
+  width: 40%;
+  padding: 1%;
+  margin-bottom: 2%;
+  font-family: 'Roboto Mono', serif;
+}
+.
+.form-email::placeholder {
+  font-family: 'Roboto Mono', serif;
+}
+
+
+.form-button-send {
+  margin-left: auto;
+}
+
+.form-button-send:hover {
+  border: 2px solid white;
+  background: white;
+  color: black;
+  text-decoration: underline;
+}
+
+
+
+.topsite-name {
+  margin: 0;
+  font-size: 5vh;
+}
+
+
+.topsite-proffesion{
   margin: 0;
   font-size: 3vh;
 }
@@ -94,28 +172,30 @@ main {
   font-size: 4vh;
 }
 
-a {
-  color: white;
-  text-decoration: none;
-  font-size: 2vh;
-}
 
-
-
-.button1 {
+.just-button {
   margin: 2%;
   border: 2px solid white;
   padding: 1%;
   transition: 0.3s;
+  background: black;
+  color: white;
+  cursor: pointer;
+  font-family: 'Roboto Mono';
 }
 
-.button1:hover {
+.just-button:hover {
   border: 2px solid white;
   background: white;
   color: black;
   text-decoration: underline;
 }
 
-a:visited {
-  color: white;
+.aboutcontact-bio {
+
+}
+
+.white-background {
+  background: white;
+  color: black;
 }

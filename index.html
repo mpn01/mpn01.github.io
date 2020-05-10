@@ -7,31 +7,40 @@
 <link rel="shortcut icon" type="image/png" href="favicon.png"/>
 </head>
 <body>
-  <section id="start">
+  <section id="topsite">
     <header>
-      <a class="button1" href=#aboutcontact>About me/Contacts</a>
+      <a class="just-button" href=#aboutcontact>About me/Contact</a>
     </header>
-  <main>
-  <h1 class="name">marcin</h1>
-  <h1 class="name">nowinski</h1>
-  <span class="span1"><script src="developer.js">showProffesion();</script><h3 class="proffesion">developer</h3></span>
-  </main>
-  <a class="button1" href="#projects">Let's check my projects, okay?</a>
+  <div id="topsite_center">
+  <h1 class="topsite-name">marcin</h1>
+  <h1 class="topsite-name">nowinski</h1>
+  <h3 class="topsite-proffesion">developer</h3>
+</div>
+  <a class="just-button" href="#projects">Let's check my projects, okay?</a>
 </section>
 
   <section id="projects">
     <h2 class="text1">empty here, heh</h2>
     <h3 class="text2">someday something will be here</h3>
-    <a href="#start" class="button1">Go to the top</a>
+    <a href="#topsite" class="just-button">Go to the top</a>
   </section>
   <section id="aboutcontact">
+<div id="aboutcontact-left">
     <h2>So.. who am i?</h2>
-
-    <h3>want to contact with me? Just use form down below</h3>
+    <img src="photo-me.jpg">
+    <p class="aboutcontact-bio"><span class="white-background">Few years ago I told my self, that I would become a programer.</span> Since that day I'm trying to do the best and enter this world. Any step I make, moves mi closer to my goal. Now you can assess if I'm closer or further. :)
+    </p>
+  </div>
+      <div id="aboutcontact-right">
+    <h3>want to contact with me? Just use this form:</h3>
       <form>
-        <input placeholder="your email" /><br />
-        <textarea placeholder="how can i help you?"></textarea>
+        <input class="form-email" placeholder="your email"/>
+        <br />
+        <textarea class="form-text" placeholder="how can i help you?">
+        </textarea>
+        <button class="just-button form-button-send">Send</button>
       </form>
+    </div>
   </section>
 </body>
 </html>
