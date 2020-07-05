@@ -54,7 +54,7 @@ a:visited {
 }
 
 
-#proffesion {
+#proffesion-name {
   background: white;
   width: 53%;
   height: 100%;
@@ -63,6 +63,7 @@ a:visited {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 2vh;
 }
 
 #aboutcontact {
@@ -134,7 +135,7 @@ form button:first-child {
   margin-bottom: 2%;
   font-family: 'Roboto Mono', serif;
 }
-.
+
 .form-email::placeholder {
   font-family: 'Roboto Mono', serif;
 }
@@ -191,9 +192,6 @@ form button:first-child {
   text-decoration: underline;
 }
 
-.aboutcontact-bio {
-
-}
 
 .white-background {
   background: white;
