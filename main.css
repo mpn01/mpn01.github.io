@@ -2,6 +2,23 @@
   scroll-behavior: smooth;
 }
 
+@media only screen and (max-width: 1050px) {
+  #aboutcontact {
+    flex-direction: column;
+    height: 200vh;
+  }
+
+  #aboutcontact-left {
+    width: 100%;
+    height: 50%;
+  }
+  #aboutcontact-right {
+    width: 100%;
+    height: 50%;
+  }
+}
+
+
 /* Main page */
 
 
@@ -73,10 +90,13 @@ a:visited {
 #aboutcontact-left {
   width: 50%;
   height: 100%;
+  display: gird;
+  justify-content: center;
+  align-items: center;
+  padding: 1vw;
 }
 
 #aboutcontact-left img {
-  position: absolute;
   z-index: -1;
   width: 10%;
   margin: 1%;
