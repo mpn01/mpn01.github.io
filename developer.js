@@ -1,4 +1,4 @@
-const proffesionTable = ['frontend','java','go','backend'];
+const proffesionTable = ['frontend','java','goLang','backend'];
 var proffesionName = document.getElementById('proffesion-name');
 proffesionName.innerHTML = proffesionTable[0];
 var random = Math.random();
@@ -12,3 +12,5 @@ if(0.25>random>0){
 } else {
     proffesionName.innerHTML = proffesionTable[3];
 }
+
+console.log(random)
