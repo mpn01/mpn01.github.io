@@ -187,7 +187,7 @@ form button:first-child {
   text-decoration: underline;
 }
 
-
+/* Top site section */
 
 .topsite-name {
   margin: 0;
@@ -199,6 +199,9 @@ form button:first-child {
   margin: 0;
   font-size: 3vh;
 }
+
+
+
 
 .text2  {
   font-size: 2.5vh;
@@ -231,4 +234,12 @@ form button:first-child {
 .white-bg {
   background: white;
   color: black;
+}
+
+
+.aboutme-line {
+  width: 50%;
+  color: white;
+  text-align: left;
+  margin-left: 0;
 }
