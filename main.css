@@ -1,17 +1,18 @@
 * {
   scroll-behavior: smooth;
   font-family: 'Roboto Slab';
+  font-weight: 300;
 }
 
 @media only screen and (max-width: 1050px) {
-  #aboutcontact {
+  #aboutme-contact {
     height: 200vh;
   }
-  #aboutcontact-left {
+  #aboutme {
     width: 100%;
     height: 50%;
   }
-  #aboutcontact-right {
+  #contact {
     width: 100%;
     height: 50%;
   }
@@ -55,75 +56,10 @@ header {
 a {
   color: white;
   text-decoration: none;
-  font-size: 2vh;
 }
 
 a:visited {
   color: white;
-}
-
-
-#topsite_center {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-
-
-#proffesion-name {
-  background: white;
-  width: 53%;
-  height: 100%;
-  margin-right: 2%;
-  color: black;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 2vh;
-}
-
-#aboutcontact {
-  flex-direction: row;
-}
-
-#aboutcontact-left {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;;
-  flex-direction: column;
-  padding: 1vw;
-}
-
-#aboutcontact-left img {
-  z-index: -1;
-  width: 10%;
-  margin: 1%;
-}
-
-#aboutcontact-right {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-#aboutme-socials {
-  flex-direction: row;
-}
-
-#aboutme-socials a{
-  font-size: 3vh;
-  transition: 0.1s;
-  margin-right: 1%;
-  text-decoration: underline;
-}
-
-#aboutme-socials a:hover {
-  background: white;
-  color: black;
 }
 
 
@@ -189,6 +125,25 @@ form button:first-child {
 
 /* Top site section */
 
+#topsite_center {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+#proffesion-name {
+  background: white;
+  width: 53%;
+  height: 100%;
+  margin-right: 2%;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2vh;
+}
+
 .topsite-name {
   margin: 0;
   font-size: 5vh;
@@ -201,6 +156,64 @@ form button:first-child {
 }
 
 
+/* About me / Contact section */
+
+
+#aboutme-contact {
+  flex-direction: row;
+}
+
+#aboutme {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;;
+  flex-direction: column;
+  padding: 1vw;
+}
+
+
+#contact {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutme-bio {
+  font-size: 3vh;
+}
+
+.aboutme-title {
+  font-size: 4vh;
+}
+
+#aboutme-socials {
+  flex-direction: row;
+}
+
+#aboutme-socials a{
+  font-size: 3vh;
+  transition: 0.1s;
+  margin-right: 1%;
+  text-decoration: underline;
+}
+
+#aboutme-socials a:hover {
+  background: white;
+  color: black;
+}
+
+.aboutme-line {
+  width: 50%;
+  color: white;
+  text-align: left;
+  margin-left: 0;
+}
+
+/* Project section(temp.) */
 
 
 .text2  {
@@ -236,10 +249,3 @@ form button:first-child {
   color: black;
 }
 
-
-.aboutme-line {
-  width: 50%;
-  color: white;
-  text-align: left;
-  margin-left: 0;
-}
