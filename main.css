@@ -209,6 +209,11 @@ form button:first-child {
   margin-left: 0;
 }
 
+.aboutme-hidden-button {
+  display: none;
+  width: 10%;
+}
+
 /* Project section(temp.) */
 
 
@@ -229,7 +234,7 @@ form button:first-child {
   background: black;
   color: white;
   cursor: pointer;
-  font-family: 'Roboto Mono';
+  font-family: 'Roboto Slab';
 }
 
 .just-button:hover {
@@ -256,11 +261,15 @@ form button:first-child {
   }
   #aboutme {
     width: 90%;
-    height: 50%;
+    height: 100vh;
   }
   #contact {
     width: 90%;
-    height: 50%;
+    height: 100vh;
+  }
+
+  .aboutme-hidden-button {
+    display: block;
   }
 }
 

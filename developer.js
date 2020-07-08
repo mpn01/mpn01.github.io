@@ -20,5 +20,6 @@ console.log(random)
 
 
 function copyToClipboard() {
-    document.execCommand('copy')
+    this.focus();
+    this.execCommand('copy');
 }
