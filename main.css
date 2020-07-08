@@ -51,6 +51,16 @@ a:visited {
 
 /* Contact form */
 
+#contact {
+  width: 50vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 form {
   width: 100%;
   height: 50%;
@@ -163,19 +173,9 @@ form button:first-child {
   width: 50vw;
   height: 100vh;
   display: flex;
-  justify-content: center;;
+  justify-content: center;
   flex-direction: column;
   padding: 1vw;
-}
-
-
-#contact {
-  width: 50%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
 }
 
 .aboutme-bio {
@@ -211,7 +211,7 @@ form button:first-child {
 
 .aboutme-hidden-button {
   display: none;
-  width: 10%;
+  text-align: center;
 }
 
 /* Project section(temp.) */
@@ -256,16 +256,17 @@ form button:first-child {
 
 @media screen and (max-width: 1050px) {
   #aboutme-contact {
-    height: 200vh;
+    height: 170vh;
     flex-direction: column;
   }
   #aboutme {
     width: 90%;
-    height: 100vh;
+    height: 100%;
+    padding: 0;
   }
   #contact {
     width: 90%;
-    height: 100vh;
+    height: 100%;
   }
 
   .aboutme-hidden-button {
