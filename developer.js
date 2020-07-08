@@ -2,6 +2,9 @@ const proffesionTable = ['frontend','java','goLang','backend'];
 var proffesionName = document.getElementById('proffesion-name');
 proffesionName.innerHTML = proffesionTable[0];
 var random = Math.random();
+var email = document.querySelector('.form-email-copy');
+email.addEventListener('click', copyToClipboard);
+
 
 if(0.25>random>0){
     proffesionName.innerHTML = proffesionTable[0];
@@ -14,3 +17,8 @@ if(0.25>random>0){
 }
 
 console.log(random)
+
+
+function copyToClipboard() {
+    document.execCommand('copy')
+}

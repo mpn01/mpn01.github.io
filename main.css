@@ -5,8 +5,6 @@
 }
 
 
-
-
 /* Main page */
 
 
@@ -108,6 +106,15 @@ form button:first-child {
   border: 2px solid white;
   background: white;
   color: black;
+  text-decoration: underline;
+}
+
+.form-email-copy {
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.form-email-copy:hover {
   text-decoration: underline;
 }
 
@@ -238,6 +245,10 @@ form button:first-child {
   color: black;
 }
 
+.smaller-font {
+  font-size: 2vh;
+}
+
 @media screen and (max-width: 1050px) {
   #aboutme-contact {
     height: 200vh;
@@ -250,5 +261,14 @@ form button:first-child {
   #contact {
     width: 90%;
     height: 50%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .form-text {
+    width: 60%;
+  }
+  .form-email {
+    width: 60%;;
   }
 }
