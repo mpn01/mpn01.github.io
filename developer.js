@@ -1,4 +1,4 @@
-const proffesionTable = ['frontend','java','goLang','backend'];
+const proffesionTable = ['frontend','java','C#','go'];
 var proffesionName = document.getElementById('proffesion-name');
 proffesionName.innerHTML = proffesionTable[0];
 var random = Math.random();
@@ -20,6 +20,5 @@ console.log(random)
 
 
 function copyToClipboard() {
-    this.focus();
-    this.execCommand('copy');
+
 }
