@@ -194,6 +194,8 @@ a:visited {
   position: absolute;
   top: 2vh;
   left: 1vw;
+  width: 5vw;
+  height: 5vw;
 }
 form {
   width: 100%;
