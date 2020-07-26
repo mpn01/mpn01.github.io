@@ -2,8 +2,26 @@
   scroll-behavior: smooth;
   font-family: 'Roboto Slab';
   font-weight: 300;
+
 }
 
+@keyframes slideIn {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
 
 /* Main page */
 
@@ -14,6 +32,7 @@ body {
   font-family:'Roboto Slab', serif;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 
@@ -47,87 +66,6 @@ a {
 a:visited {
   color: white;
 }
-
-
-/* Contact form */
-
-#contact {
-  width: 50vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-form {
-  width: 100%;
-  height: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-
-form button:first-child {
-  margin-right: auto;
-}
-
-
-.form-text {
-  background: black;
-  color: white;
-  padding: 1%;
-  border: 2px solid white;
-  width: 40%;
-  height: 50%;
-  font-family: 'Roboto Mono', serif;
-  resize: none;
-}
-
-.form-text::placeholder {
-  font-family: 'Roboto Mono', serif;
-}
-
-
-.form-email {
-  background: black;
-  color: white;
-  border: 2px solid white;
-  font-size: 100%;
-  width: 40%;
-  padding: 1%;
-  margin-bottom: 2%;
-  font-family: 'Roboto Mono', serif;
-}
-
-.form-email::placeholder {
-  font-family: 'Roboto Mono', serif;
-}
-
-
-.form-button-send {
-  margin-left: auto;
-}
-
-.form-button-send:hover {
-  border: 2px solid white;
-  background: white;
-  color: black;
-  text-decoration: underline;
-}
-
-.form-email-copy {
-  cursor: pointer;
-  transition: 0.1s;
-}
-
-.form-email-copy:hover {
-  text-decoration: underline;
-}
-
 /* Top site section */
 
 #topsite_center {
@@ -159,6 +97,23 @@ form button:first-child {
 .topsite-proffesion{
   margin: 0;
   font-size: 3vh;
+}
+
+/* Project section(temp.) */
+
+#project-card {
+  background: black;
+  border: 2px solid white;
+  width:90%;
+  height:80%
+}
+
+.text2  {
+  font-size: 2.5vh;
+}
+
+.text1 {
+  font-size: 4vh;
 }
 
 
@@ -214,31 +169,126 @@ form button:first-child {
   text-align: center;
 }
 
-/* Project section(temp.) */
 
+/* Contact section */
 
-.text2  {
-  font-size: 2.5vh;
+#contact {
+  display: none;
+  background: white;
+  width: 40vw;
+  height: 100vh;
+  position: absolute;
+  right: 0;
+  color: black;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-.text1 {
-  font-size: 4vh;
+#contact-close-btn {
+  background: url(arrow-right.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  top: 2vh;
+  left: 1vw;
 }
+form {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+form button:first-child {
+  margin-right: auto;
+}
+
+
+.contact-title {
+  font-size: 23px;
+}
+
+.form-text {
+  background: white;
+  color: black;
+  padding: 1%;
+  border: 2px solid black;
+  width: 70%;
+  height: 70%;
+  font-family: 'Roboto Mono', serif;
+  resize: none;
+}
+
+.form-text::placeholder {
+  font-family: 'Roboto Mono', serif;
+}
+
+
+.form-email {
+  background: white;
+  color: black;
+  border: 2px solid black;
+  font-size: 100%;
+  width: 70%;
+  padding: 1%;
+  margin-bottom: 2%;
+  font-family: 'Roboto Mono', serif;
+}
+
+.form-email::placeholder {
+  font-family: 'Roboto Mono', serif;
+}
+
+
+.form-button-send {
+  margin-left: auto;
+  margin: 2%;
+  /* border: 2px solid white; */
+  padding: 1%;
+  transition: 0.3s;
+  background: white;
+  color: black;
+  cursor: pointer;
+  border: 2px solid black;
+}
+
+.form-button-send:hover {
+  border: 2px solid black;
+  background: black;
+  color: white;
+  text-decoration: underline;
+}
+
+.form-email-copy {
+  cursor: pointer;
+  transition: 0.1s;
+}
+
+.form-email-copy:hover {
+  text-decoration: underline;
+}
+
 
 
 .just-button {
   margin: 2%;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   padding: 1%;
   transition: 0.3s;
   background: black;
   color: white;
   cursor: pointer;
-  font-family: 'Roboto Slab';
+  border-bottom: 2px solid white;
 }
 
 .just-button:hover {
-  border: 2px solid white;
+  /* border: 2px solid white; */
   background: white;
   color: black;
   text-decoration: underline;
@@ -257,31 +307,24 @@ form button:first-child {
 }
 
 @media screen and (max-width: 1050px) {
-  #aboutme-contact {
-    height: 200vh;
-    flex-direction: column;
-  }
-  #aboutme {
-    width: 90%;
-    height: 100%;
-    padding: 0;
-  }
-  #contact {
-    width: 90%;
-    height: 100%;
-  }
-
-  .aboutme-hidden-button {
-    display: block;
-  }
 
   .topsite-button {
     margin-top: 5vh;
+
+  }
+
+  #contact {
+    width: 100vw;
   }
 
 }
 
 @media screen and (max-width: 700px) {
+
+  #aboutme {
+    width: 90vw;
+  }
+
   .form-text {
     width: 60%;
   }

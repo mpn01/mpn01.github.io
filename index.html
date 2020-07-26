@@ -14,8 +14,24 @@
 <body>
   <section id="topsite">
     <header>
-      <a class="just-button" href=#aboutme>About me/Contact</a>
+      <a class="just-button aboutme-btn" href=#aboutme>About me</a>
+      <a class="contact-btn just-button">Contact</a>
     </header>
+    <div id="contact">
+      <button id="contact-close-btn">&nbsp;</button>
+      <center><h1 class="contact-title">Contact form</h1></center>
+      <form>
+        <input class="form-email" placeholder="your email" />
+        <br />
+        <textarea class="form-text" placeholder="how can i help you?"></textarea>
+        <button class="form-button-send">Send</button>
+      </form>
+
+      <center>
+        <p>Need to send me someting more than just text? Use this email:<br><span class="smaller-font">(Click to copy)</span></p>
+      </center>
+      <p class="form-email-copy">mnowinski01@protonmail.com</p>
+    </div>
     <div div id="topsite_center">
       <h1 class="topsite-name">marcin</h1>
       <h1 class="topsite-name">nowinski</h1>
@@ -24,9 +40,13 @@
     <a class="just-button topsite-button" href="#projects">Let's check my projects, ok?</a>
   </section>
   <section id="projects">
-    <h2 class="text1">empty here, heh</h2>
+    <div id="project-card">
+      <center><h1>Home library</h1></center>
+
+      </div>
+   <!-- <h2 class="text1">empty here, heh</h2>
     <h3 class="text2">someday something will be here</h3>
-    <a href="#topsite" class="just-button">Go to the top</a>
+    <a href="#topsite" class="just-button">Go to the top</a> -->
   </section>
   <section id="aboutme-contact">
     <div id="aboutme">
@@ -46,24 +66,6 @@
       </div>
       <center><a class="just-button aboutme-hidden-button" href="#hook">Contact</a></center>
     </div>
-    <div id="contact">
-      <h2>
-        <center>want to contact with me? Just use this form:</center>
-      </h2>
-      <form>
-        <input class="form-email" placeholder="your email" />
-        <br />
-        <textarea class="form-text" placeholder="how can i help you?"></textarea>
-        <button class="just-button form-button-send">Send</button>
-      </form>
-
-      <center>
-        <p>Need to send me someting more than just text? Use this email:<br><span class="smaller-font">(Click to
-            copy)</span></p>
-      </center>
-      <p class="form-email-copy">mnowinski01@protonmail.com</p>
-    </div>
-    <div id="hook"></div>
   </section>
   <script src="developer.js"></script>
 </body>
