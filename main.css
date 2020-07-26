@@ -192,10 +192,9 @@ a:visited {
   border: none;
   cursor: pointer;
   position: absolute;
-  top: 4vh;
-  left: 2.5vw;
+  top: 2vh;
+  left: 1vw;
 }
-
 form {
   width: 100%;
   height: 50%;
@@ -277,18 +276,18 @@ form button:first-child {
 
 
 
-.just-button {
+.button {
   margin: 2%;
-  /* border: 2px solid white; */
   padding: 1%;
   transition: 0.3s;
   background: black;
   color: white;
   cursor: pointer;
+  border: none;
   border-bottom: 2px solid white;
 }
 
-.just-button:hover {
+.button:hover {
   /* border: 2px solid white; */
   background: white;
   color: black;
@@ -296,7 +295,10 @@ form button:first-child {
 }
 
 
-
+.black-bg {
+  background: black;
+  color: white;
+}
 
 .white-bg {
   background: white;
@@ -324,6 +326,11 @@ form button:first-child {
 
   #aboutme {
     width: 90vw;
+  }
+
+  #contact-close-btn {
+    top: 4vh;
+
   }
 
   .form-text {

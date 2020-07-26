@@ -14,30 +14,30 @@
 <body>
   <section id="topsite">
     <header>
-      <a class="just-button aboutme-btn" href=#aboutme>About me</a>
-      <a class="contact-btn just-button">Contact</a>
+      <a class="button aboutme-btn" href=#aboutme>About me</a>
+      <a class="contact-btn button">Contact</a>
     </header>
     <div id="contact">
       <button id="contact-close-btn">&nbsp;</button>
-      <center><h1 class="contact-title">Contact form</h1></center>
+      <center><h1 class="contact-title"><span class="black-bg">contact form</span></h1></center>
       <form>
         <input class="form-email" placeholder="your email" />
         <br />
         <textarea class="form-text" placeholder="how can i help you?"></textarea>
         <button class="form-button-send">Send</button>
       </form>
-
       <center>
         <p>Need to send me someting more than just text? Use this email:<br><span class="smaller-font">(Click to copy)</span></p>
       </center>
       <p class="form-email-copy">mnowinski01@protonmail.com</p>
     </div>
+
     <div div id="topsite_center">
       <h1 class="topsite-name">marcin</h1>
       <h1 class="topsite-name">nowinski</h1>
       <h3 class="topsite-proffesion"><span id="proffesion-name"></span>developer</h3>
     </div>
-    <a class="just-button topsite-button" href="#projects">Let's check my projects, ok?</a>
+    <a class="button topsite-button" href="#projects">Let's check my projects, ok?</a>
   </section>
   <section id="projects">
     <div id="project-card">
@@ -47,6 +47,7 @@
    <!-- <h2 class="text1">empty here, heh</h2>
     <h3 class="text2">someday something will be here</h3>
     <a href="#topsite" class="just-button">Go to the top</a> -->
+    <a href="#topsite" class="button">Go back</a>
   </section>
   <section id="aboutme-contact">
     <div id="aboutme">
@@ -64,7 +65,7 @@
         <a href="https://github.com/mpn01">github</a>
         <a href="#">blog</a>
       </div>
-      <center><a class="just-button aboutme-hidden-button" href="#hook">Contact</a></center>
+      <center><a class="button" style="margin-top: 10vh;" href="#topsite">Go back</a></center>
     </div>
   </section>
   <script src="developer.js"></script>
