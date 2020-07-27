@@ -351,6 +351,10 @@ form button:first-child {
 
   }
 
+  #contact {
+    width: 100vw;
+  }
+
   #bio {
     width: 85vw;
   }
