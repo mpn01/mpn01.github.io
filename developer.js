@@ -14,13 +14,14 @@ function showContact() {
         contact.style.display = 'flex';
         btnStatus = true;
         contact.style.animation = 'slideIn .5s';
+        contact.style.animationFillMode = 'forwards';
     }
 }
 function hideContact() {
     if(btnStatus == true){
-        contact.style.display = 'none';
+        contact.style.animation = 'slideOut .5s';
         btnStatus = false;
-        contact.style.animation = 'slideOut 1s';
+        contact.style.animationFillMode = 'forwards'
     }
 }
 

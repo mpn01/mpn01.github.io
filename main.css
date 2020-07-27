@@ -16,10 +16,10 @@
 
 @keyframes slideOut {
   from {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
   to {
-    transform: translateX(0%);
+    transform: translateX(100%);
   }
 }
 
@@ -183,10 +183,12 @@ a:visited {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  animation: slideOut 1s;
+  z-index: 5;
 }
 
 #contact-close-btn {
-  background: url(arrow-right.svg);
+  background: white;
   background-position: center;
   background-repeat: no-repeat;
   border: none;
@@ -194,9 +196,33 @@ a:visited {
   position: absolute;
   top: 2vh;
   left: 1vw;
-  width: 5vw;
-  height: 5vw;
+  width: 2vw;
+  height: 2vw;
 }
+
+#contact-close-btn::before {
+  content: '';
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 5%;
+  top: 0;
+  left: 0;
+  transform: translateY(0.9vw) rotate(45deg);
+}
+
+#contact-close-btn::after {
+  content: '';
+  position: absolute;
+  background: black;
+  width: 100%;
+  height: 5%;
+  bottom: 0;
+  left: 0;
+  transform: translateY(-1vw) rotate(-45deg);
+}
+
+
 form {
   width: 100%;
   height: 50%;
@@ -287,14 +313,30 @@ form button:first-child {
   cursor: pointer;
   border: none;
   border-bottom: 2px solid white;
+  position: relative;
+  z-index: 1;
+}
+
+.button::before {
+  content: '';
+  background:  white;
+  position: absolute;
+  width: 100%;
+  height: 1%;
+  left: 0;
+  bottom: 0;
+  transition: height 0.2s;
+  z-index: -1;
+}
+
+.button:hover::before {
+  height: 100%;
 }
 
 .button:hover {
-  /* border: 2px solid white; */
-  background: white;
   color: black;
-  text-decoration: underline;
 }
+
 
 
 .black-bg {
@@ -330,9 +372,12 @@ form button:first-child {
     width: 90vw;
   }
 
-  #contact-close-btn {
-    top: 4vh;
+  #contact-close-btn::after{
+    height: 20%;
+  }
 
+  #contact-close-btn::before{
+    height: 20%;
   }
 
   .form-text {
