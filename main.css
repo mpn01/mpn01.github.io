@@ -372,6 +372,10 @@ form button:first-child {
     width: 90vw;
   }
 
+  #contact-close-btn {
+    top: 5vh;
+  }
+
   #contact-close-btn::after{
     height: 20%;
   }
