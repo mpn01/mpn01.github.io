@@ -1,4 +1,4 @@
-const proffesionTable = ['frontend','java','C#','go'];
+const proffesionTable = ['frontend','java','C#','PHP'];
 var proffesionName = document.getElementById('proffesion-name');
 proffesionName.innerHTML = proffesionTable[0];
 var random = Math.random();
